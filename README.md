@@ -1,0 +1,2 @@
+# smkn-bersama
+Project gabut

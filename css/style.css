@@ -1,0 +1,132 @@
+/* NavBar */
+
+nav .container img {
+	width: 20px;
+	border-radius: 35%;
+}
+nav .container .navbar-brand {
+	font-family: 'Lobster', cursive;
+	font-size: 19px;
+	position: relative;
+	right: 35px;
+}
+.navbar-nav .nav-link {
+	font-family: sans-serif;
+	font-size: 14px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+.navbar-nav .nav-link:hover {
+	background-color: rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+.navbar-nav .tombol {
+	margin-top: 15px;
+}
+.navbar-nav .btn-success.tombol {
+	margin-bottom: 10px;
+}
+/* Jumbotron */
+.jumbotron {
+	background-image: url('http://sman56.sch.id/wp-content/uploads/2020/08/MUTASI.jpg');
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-top: -3px;
+	position: relative;
+}
+.jumbotron::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	
+}
+
+.jumbotron .text-jumbotron {
+	font-family: 'Noto Serif', serif;
+	color: white;
+	z-index: 9;
+	position: relative;
+}
+.jumbotron .display-4 {
+	margin-top: 90px;
+	font-size: 40px;
+}
+.jumbotron .display-4 span {
+	font-weight: 600;
+}
+.jumbotron p {
+	color: white;
+	font-weight: bold;
+}
+.jumbotron .btn-success.tombol {
+	position: relative;
+	z-index: 9;
+}
+
+
+/* Components Bootstrap */
+.btn.btn-success {
+	background-color:#64edbc;
+	border: 0 solid blue;
+}
+.btn.btn-primary {
+	background-color: #42b7ff;
+	border: 0 solid blue;
+}
+
+
+/* Desktop Version */
+@media (min-width: 992px) {
+	
+	/* NavBar */
+	nav .container img {
+		width: 45px
+	}
+	nav .container .navbar-brand {
+		font-size: 35px;
+		position: relative;
+		left: 15px;
+	}
+	.navbar-nav {
+		margin-left: 140px;
+		margin-top: 5px;
+	}
+	.navbar-nav .nav-link {
+		margin-top: -5px;
+		width: 100px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.navbar-nav .nav-link:hover {
+		border-radius: 10px;
+	}
+	.navbar-nav .tombol {
+		margin-top: -8px;
+		margin-left: 15px;
+		border-radius: 15px;
+		padding-top: 8px;
+	}
+	.navbar-nav .btn-success.tombol {
+		margin-bottom: 1px;
+	}
+	.navbar-nav .btn-primary.tombol {
+		margin-bottom: 1px;
+	}
+		
+	/* Jumbotron */
+	.jumbotron {
+		height: 595px;
+	}
+	.jumbotron .display-4 {
+		width: 860px;
+		margin-left: 50px;
+		margin-top: 250px;
+	}
+}

@@ -1,4 +1,7 @@
 /* NavBar */
+body {
+		font-family: 'Quicksand', sans-serif;
+}
 
 nav .container img {
 	width: 20px;
@@ -10,31 +13,38 @@ nav .container .navbar-brand {
 	position: relative;
 	right: 35px;
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link, .navbar-nav #dropdown {
 	font-family: sans-serif;
 	font-size: 14px;
 	margin-top: 10px;
 	padding-left: 10px;
+	font-weight: bolder;
+}
+.navbar-nav #dropdown {
+	position: relative;
+	right: 30px;
 }
 .navbar-nav .nav-link:hover {
 	background-color: rgba(0,0,0,.2);
 	border-radius: 5px;
 }
-.navbar-nav .tombol {
+.navbar-nav .btn {
 	margin-top: 15px;
 }
-.navbar-nav .btn-success.tombol {
+.navbar-nav .btn.btn-success {
 	margin-bottom: 10px;
 }
+
 /* Jumbotron */
 .jumbotron {
-	background-image: url('http://sman56.sch.id/wp-content/uploads/2020/08/MUTASI.jpg');
-	height: 600px;
+	background-image: url('../images/photos/jumbotron.jpg');
+	height: 700px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 	margin-top: -3px;
 	position: relative;
+	border-bottom: 2px solid black;
 }
 .jumbotron::after {
 	content: '';
@@ -44,42 +54,84 @@ nav .container .navbar-brand {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,.5);
-	
+	background-color: rgba(0,0,0,.7);
 }
-
-.jumbotron .text-jumbotron {
+.jumbotron h1, .jumbotron p {
 	font-family: 'Noto Serif', serif;
 	color: white;
 	z-index: 9;
 	position: relative;
 }
-.jumbotron .display-4 {
+.jumbotron h1 {
 	margin-top: 90px;
 	font-size: 40px;
 }
-.jumbotron .display-4 span {
-	font-weight: 600;
+.jumbotron span {
+	font-weight: 700;
 }
 .jumbotron p {
 	color: white;
-	font-weight: bold;
+	font-weight: 400;
 }
-.jumbotron .btn-success.tombol {
+.jumbotron .btn.btn-success {
 	position: relative;
 	z-index: 9;
+	background-color: #18c1af;
+	font-weight: bold;
 }
+
+/* Profile */
+#profile .container div h2 {
+	font-size: 30px;
+}
+#profile .container div h2 img {
+	width: 48px;
+}
+#profile .container div p {
+	/*font-size: 15px;*/
+}
+
+/* Jurusan */
+#jurusan .container {
+	/*background-color: aqua;*/
+	min-height: 800px;
+}
+#jurusan .container .title {
+	margin: 30px 0 25px;
+}
+
+#jurusan div.col-sm-5, #jurusan div.col-sm-6 {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 3px black;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	
+}
+#jurusan div.col-sm-5 {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+
 
 
 /* Components Bootstrap */
 .btn.btn-success {
-	background-color:#64edbc;
-	border: 0 solid blue;
+	/*background-color: rgb(38,176,33);*/
+	border: 0 solid white;
 }
+.btn.btn-success:hover {
+	color: #18c1af;
+	background-color: white;
+	border: 0 solid white !important;
+}
+
 .btn.btn-primary {
-	background-color: #42b7ff;
+	background-color: #118dec
 	border: 0 solid blue;
+
 }
+
 
 
 /* Desktop Version */
@@ -107,26 +159,29 @@ nav .container .navbar-brand {
 	.navbar-nav .nav-link:hover {
 		border-radius: 10px;
 	}
-	.navbar-nav .tombol {
+	.navbar-nav .btn {
 		margin-top: -8px;
 		margin-left: 15px;
 		border-radius: 15px;
 		padding-top: 8px;
 	}
-	.navbar-nav .btn-success.tombol {
+	.navbar-nav .btn.btn-success {
 		margin-bottom: 1px;
 	}
-	.navbar-nav .btn-primary.tombol {
+	.navbar-nav .btn.btn-primary {
 		margin-bottom: 1px;
 	}
 		
 	/* Jumbotron */
 	.jumbotron {
-		height: 595px;
+		height: 750px;
 	}
 	.jumbotron .display-4 {
 		width: 860px;
 		margin-left: 50px;
 		margin-top: 250px;
 	}
+	
+	/* Profile */
+
 }

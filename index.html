@@ -14,36 +14,38 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
 
-	<!-- Noto Serif -->
+	<!-- Montserrat -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif&family=Satisfy&family=Ubuntu&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
+
 	<!-- Quicksand -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
+
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	
+
 	<title>Smkn Bersama</title>
 </head>
 <body>
-	
+
 	<!-- NavBar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
-			<img src="images/icon/tut-wuri-handayani.png"/>
-			<a class="navbar-brand" href="#">SMKN BERSAMA</a>
+			<img src="images/icon/tut-wuri-handayani.png" />
+			<a class="navbar-brand" href="https://wa.me/628975836972">SMKN BERSAMA</a>
+			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
+	
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-link active" href="#">Beranda<span class="sr-only">(current)</span></a>
-					<a class="nav-link" href="#">Profil</a>
+					<a class="nav-link active" href="#navbar">Beranda<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#intro">Profil</a>
 					<a class="nav-link" href="#">Jurusan</a>
 					<a class="nav-link" href="#">Tentang</a>
 					<li class="nav-item dropdown" id="dropdown">
@@ -54,101 +56,111 @@
 							<a class="dropdown-item" href="#">Daftar Guru</a>
 						</div>
 					</li>
+					<a class="btn btn-primary tombol" href="#">Masuk</a>
+					<a class="btn btn-success tombol" href="#">Daftar</a>
 				</div>
 			</div>
 		</div>
 	</nav>
 	<!-- Akhir NavBar -->
-
+	
 	<!-- Jumbotron -->
 	<div class="jumbotron">
-		<h1 class="display-4">Sekolah <span>Berprestasi</span>, Akreditas <span>Tinggi</span>, dan
-			<span>Berkarakter</span></h1>
-		<hr class="my-4">
-		<p>Jadi tunggu apa lagi, ayo <span>daftarkan</span> dirimu sekarang !</p>
-		<a class="btn btn-success btn-lg" href="#" role="button">Info Pendaftaran</a>
+		<div class="container">
+			<h1 class="display-4">"Sekolah <span>Berprestasi</span>, dengan <br /><span>Akreditas A</span>, dan 95% <span>Lulus Langsung Kerja</span>."</h1>
+			<p>Informasi lebih lanjut, tentang <span>SMKN BERSAMA</span> dan <br /> apa saja <span>keunggulan</span> dari sekolah ini.</p>
+			<a class="btn btn-success btn-lg" href="#intro" role="button">Info Sekolah</a>
+		</div>
 	</div>
 	<!-- Akhir Jumbotron -->
 	
-	<!-- Profil -->
-	<section id="profile" class="profile">
-		
+	<!-- Introduction -->
+	<section id="intro">
+	
 		<div class="container text-center">
 			<div class="row">
-				<div class="col-sm-12">
-					<h1>Profil <img src="images/icon/profil.png" alt="profil" /></h1>
-					<h3>- SMKN BERSAMA -</h3>
+				<div class="col-sm">
+					<h1 class="judul">SMKN BERSAMA</h1>
+					<img class="ikon-judul" src="images/icon/intro.png" alt="intro"/>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed temporibus optio, accusamus. Culpa aperiam in tempora, delectus vero accusamus, quis modi. Illo quam esse facere quaerat, saepe velit! Assumenda pariatur quae sit, culpa rem delectus repellat dolores iste reiciendis, perferendis illo, totam debitis nulla ipsum. Vero reiciendis commodi distinctio alias magnam vel velit esse. Qui ea, cumque minus labore adipisci, illo perferendis commodi!</p>
 				</div>
 			</div>
+			<div class="tes"></div>
 			
 			<div class="row">
 				<div class="col-sm-5 offset-sm-1">
-					<h3>Visi</h3>
+					<h2 class="subjudul">Visi</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias optio quod debitis nostrum libero porro architecto itaque molestiae illum laborum voluptas, est maiores unde, repellendus blanditiis eaque expedita culpa quos!</p>
 				</div>
 				<div class="col-sm-5">
-					<h3>Misi</h3>
+					<h2 class="subjudul">Misi</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam odit provident, quam quas, eaque! A eum culpa unde deleniti aperiam omnis, aspernatur dignissimos iusto cum ipsum commodi, hic adipisci!</p>
 				</div>
 			</div>
-			
+	
 		</div>
 	</section>
-	<!-- Akhir Profil -->
-	<hr />
+	<!-- Akhir Introduction -->
 	
 	<!-- Jurusan -->
-	<section id="jurusan" class="jurusan">
+	<section id="jurusan">
 		<div class="container text-center">
-			
+	
 			<div class="row">
 				<div class="col-sm">
-					<h1 class="title">Jurusan <img src="images/icon/jurusan.png" alt="" /></h1>
+					<h1 class="judul">Jurusan</h1>
+					<img class="ikon-judul" src="images/icon/jurusan.png" alt="jurusan" />
 				</div>
 			</div>
-				
+	
 			<div class="row">
 				<div class="col-sm-5">
-					<h2>Teknik Kendaraan Ringan</h2>
-					<img src="../images/icon/otomotif.png" alt="" />
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</h4>
+					<h2 class="subjudul">Teknik Kendaraan Ringan</h2>
+					<img src="../images/icon/kendaraan-ringan.png" alt="" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur earum eaque magni ea deleniti alias dolorem blanditiis rem nesciunt cupiditate eveniet quaerat magnam, fugiat hic. Aperiam eveniet praesentium et nisi.</p>
 				</div>
-				
+						
 				<div class="col-sm-5">
-					<h2>Teknik Kendaraan Berat</h2>
-					<img src="../images/icon/otomotif.png" alt="" />
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</h4>
+					<h2 class="subjudul">Teknik Kendaraan Berat</h2>
+					<img src="../images/icon/kendaraan-berat.png" alt="" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sint! Laborum obcaecati totam labore? Soluta veritatis molestiae deserunt alias eligendi, fugit quis cum aliquam impedit.</p>
 				</div>
 			</div>
-			
+					
 			<div class="row">
 				<div class="col-sm-5">
-					<h2>Teknik Kendaraan Ringan</h2>
-					<img src="../images/icon/otomotif.png" alt="" />
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</h4>
+					<h2 class="subjudul">Rekayasa Perangkat Lunak</h2>
+					<img src="../images/icon/rpl.png" alt="" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</p>
 				</div>
-				
+	
 				<div class="col-sm-5">
-					<h2>Teknik Kendaraan Berat</h2>
-					<img src="../images/icon/otomotif.png" alt="" />
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</h4>
+					<h2 class="subjudul">Teknik Komputer dan Jaringan</h2>
+					<img src="../images/icon/tkj.png" alt="" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</p>
 				</div>
 			</div>
-		
+	
 			<div class="row">
 				<div class="col-sm-6 offset-sm-3">
-					<h2>Teknik Kendaraan Ringan</h2>
-					<img src="../images/icon/otomotif.png" alt="" />
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</h4>
+					<h2 class="subjudul">Multimedia</h2>
+					<img src="../images/icon/multimedia.png" alt="" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores sapiente blanditiis commodi dolor nam debitis aliquid qui, nemo sint ipsa, provident dicta, repellendus assumenda alias nihil! Voluptatibus quos voluptas suscipit eos, pariatur quam hic dolorem doloremque, molestiae culpa non officia maiores autem, cupiditate. Rerum.</p>
 				</div>
 			</div>
-				
+		</div>
 	</section>
-	
+
 	<!-- Akhir Jurusan -->
-	
-	
+
+
+
+
+
+
+
+
+
 	<!-- Javascript Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

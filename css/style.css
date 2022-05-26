@@ -1,50 +1,46 @@
 /* NavBar */
 body {
-		font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
-
 nav .container img {
-	width: 20px;
+	width: 19px;
 	border-radius: 35%;
+	position: relative;
+	right: 3px;
 }
 nav .container .navbar-brand {
 	font-family: 'Lobster', cursive;
-	font-size: 19px;
+	font-size: 17px;
 	position: relative;
-	right: 35px;
+	right: 45px;
+	top: 2px;
 }
-.navbar-nav .nav-link, .navbar-nav #dropdown {
-	font-family: sans-serif;
+.navbar-nav {
+	margin: 13px 0;
+}
+.navbar-nav .nav-link {
 	font-size: 14px;
 	margin-top: 10px;
 	padding-left: 10px;
 	font-weight: bolder;
 }
-.navbar-nav #dropdown {
-	position: relative;
-	right: 30px;
-}
 .navbar-nav .nav-link:hover {
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,.03);
 	border-radius: 5px;
 }
-.navbar-nav .btn {
-	margin-top: 15px;
+.navbar-nav a.btn-primary {
+	margin: 10px 0;
 }
-.navbar-nav .btn.btn-success {
-	margin-bottom: 10px;
-}
-
 /* Jumbotron */
 .jumbotron {
 	background-image: url('../images/photos/jumbotron.jpg');
-	height: 700px;
+	height: 1000px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: -280px;
 	text-align: center;
-	margin-top: -3px;
 	position: relative;
-	border-bottom: 2px solid black;
+	box-shadow:  0 10px 10px -5px rgba(0,0,0,.75);
 }
 .jumbotron::after {
 	content: '';
@@ -56,22 +52,31 @@ nav .container .navbar-brand {
 	height: 100%;
 	background-color: rgba(0,0,0,.7);
 }
+.jumbotron .container {
+	position: relative;
+	top: 0px;
+}
 .jumbotron h1, .jumbotron p {
-	font-family: 'Noto Serif', serif;
 	color: white;
-	z-index: 9;
+	z-index: 99;
 	position: relative;
 }
+
 .jumbotron h1 {
-	margin-top: 90px;
-	font-size: 40px;
-}
-.jumbotron span {
-	font-weight: 700;
+	font-family: 'Montserrat Alternates', sans-serif;
+	margin: 90px 0 120px;
+	font-size: 43px;
+	
 }
 .jumbotron p {
 	color: white;
+	font-size: 15px;
 	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+span {
+	font-weight: 700;
 }
 .jumbotron .btn.btn-success {
 	position: relative;
@@ -80,44 +85,68 @@ nav .container .navbar-brand {
 	font-weight: bold;
 }
 
-/* Profile */
-#profile .container div h2 {
-	font-size: 30px;
+/* Introduction */
+#intro {
+	margin-top: -15px;
+	padding: 50px 0 50px;
+	/*box-shadow: 0 10px 15px -8px rgba(0,0,0,.8);*/
+	box-shadow: 0 40px 30px -45px rgba(0,0,0,.6);
+	border-radius: 10px;
 }
-#profile .container div h2 img {
-	width: 48px;
+#intro .container .row {
+	margin-bottom: -10px;
 }
-#profile .container div p {
-	/*font-size: 15px;*/
+#intro .container .row p {
+	padding-bottom: 25px;
+}
+.judul {
+	font-size: 45px;
+	font-weight: 700;
+}
+.ikon-judul {
+	width: 75px;
+	margin: 5px 0 35px;
+}
+.subjudul {
+	margin-bottom: 17px;
+	font-weight: 500;
 }
 
 /* Jurusan */
-#jurusan .container {
-	/*background-color: aqua;*/
-	min-height: 800px;
+#jurusan {
+	padding: 65px 0 ;
+	min-height: 3000px;
 }
-#jurusan .container .title {
-	margin: 30px 0 25px;
+#jurusan .container .row .col-sm-5, #jurusan .col-sm-6 {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,.15);
+	margin: 20px 25px 40px;
+	padding: 40px 20px;
+	background-color: white;
+}
+#jurusan .container .row .subjudul {
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+#jurusan .container .row img {
+	width: 65px;
+	margin-top: 10px;
+	margin-bottom: 23px;
+}
+#jurusan .container .row p {
+	font-size: 14px;
 }
 
-#jurusan div.col-sm-5, #jurusan div.col-sm-6 {
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px 3px black;
-	margin-bottom: 40px;
-	margin-top: 30px;
-	
-}
-#jurusan div.col-sm-5 {
-	margin-right: 40px;
-	margin-left: 40px;
-}
+
+
+
+
 
 
 
 
 /* Components Bootstrap */
 .btn.btn-success {
-	/*background-color: rgb(38,176,33);*/
 	border: 0 solid white;
 }
 .btn.btn-success:hover {
@@ -127,10 +156,16 @@ nav .container .navbar-brand {
 }
 
 .btn.btn-primary {
-	background-color: #118dec
-	border: 0 solid blue;
-
+	background-color: #118dec;
 }
+.btn.btn-primary:hover {
+	color: #118dec;
+	background-color: white;
+}
+
+
+
+
 
 
 

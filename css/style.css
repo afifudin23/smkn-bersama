@@ -2,6 +2,11 @@
 body {
 	font-family: 'Quicksand', sans-serif;
 }
+#navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
 nav .container img {
 	width: 19px;
 	border-radius: 35%;
@@ -28,9 +33,15 @@ nav .container .navbar-brand {
 	background-color: rgba(0,0,0,.03);
 	border-radius: 5px;
 }
-.navbar-nav a.btn-primary {
-	margin: 10px 0;
+.navbar-nav .nav-item .dropdown-menu .btn-primary {
+	margin-left: 25px;
+	margin-right: 10px;
+	width: 130px;
 }
+.navbar-nav .nav-item .dropdown-menu .btn-success {
+	width: 130px;
+}
+
 /* Jumbotron */
 .jumbotron {
 	background-image: url('../images/photos/jumbotron.jpg');
@@ -115,7 +126,6 @@ span {
 /* Jurusan */
 #jurusan {
 	padding: 65px 0 ;
-	min-height: 3000px;
 }
 #jurusan .container .row .col-sm-5, #jurusan .col-sm-6 {
 	border-radius: 10px;
@@ -136,12 +146,9 @@ span {
 #jurusan .container .row p {
 	font-size: 14px;
 }
-
-
-
-
-
-
+#jurusan .container .row a {
+	text-decoration: none;
+}
 
 
 

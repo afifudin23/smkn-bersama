@@ -33,13 +33,8 @@ nav .container .navbar-brand {
 	background-color: rgba(0,0,0,.03);
 	border-radius: 5px;
 }
-.navbar-nav .nav-item .dropdown-menu .btn-primary {
-	margin-left: 25px;
-	margin-right: 10px;
-	width: 130px;
-}
-.navbar-nav .nav-item .dropdown-menu .btn-success {
-	width: 130px;
+.navbar-nav .btn-primary {
+	margin: 15px 0;
 }
 
 /* Jumbotron */
@@ -150,6 +145,75 @@ span {
 	text-decoration: none;
 }
 
+/* Alumni */
+#alumni {
+	background-image: linear-gradient(-140deg, #eee 50%, aqua 50% );
+	text-align: center;
+	margin-top: 120px;
+	min-height: 800px;
+}
+#alumni .container h1 {
+	font-size: 60px;
+	padding-top: 50px;
+}
+#alumni .container img {
+	margin-bottom: 50px;
+}
+#alumni .row .col-md {
+	margin-bottom: 70px;
+}
+#alumni .img-area {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #fff;
+	top: 35px;
+	left: 34%;
+}
+#alumni .img-area img {
+	width: 100%;
+}
+#alumni .text-area {
+	width: 100%;
+	height: 400px;
+	display: block;
+	padding: 175px 10px 30px;
+	background: #262626;
+	color: #fff;
+	border-radius: 15px;
+
+} 
+#alumni .text-area h5 {
+	font-size: 21px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+#alumni .text-area p {
+	font-size: 17px;
+}
+#alumni .single-box {
+	position: relative;
+}
+.carousel-indicators {
+	left: 0;
+	top: auto;
+	bottom: -70px;
+}
+.carousel-indicators li {
+	background-color: #000;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+.carousel-indicators li.active {
+	background-color: #fff;
+}
+
+
+
+
 
 
 /* Components Bootstrap */
@@ -159,7 +223,7 @@ span {
 .btn.btn-success:hover {
 	color: #18c1af;
 	background-color: white;
-	border: 0 solid white !important;
+	border: 0 solid white;
 }
 
 .btn.btn-primary {

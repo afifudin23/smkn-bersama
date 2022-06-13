@@ -7,18 +7,17 @@ body {
 	width: 100%;
 	z-index: 999;
 }
-nav .container img {
-	width: 19px;
-	border-radius: 35%;
-	position: relative;
-	right: 3px;
-}
 nav .container .navbar-brand {
 	font-family: 'Lobster', cursive;
 	font-size: 17px;
 	position: relative;
-	right: 45px;
+	right: 7px;
 	top: 2px;
+}
+nav .container .navbar-brand img {
+	width: 19px;
+	position: relative;
+	top: -3px;
 }
 .navbar-nav {
 	margin: 13px 0;
@@ -67,7 +66,6 @@ nav .container .navbar-brand {
 	z-index: 99;
 	position: relative;
 }
-
 .jumbotron h1 {
 	font-family: 'Montserrat Alternates', sans-serif;
 	margin: 90px 0 120px;
@@ -159,8 +157,8 @@ span {
 #alumni .container img {
 	margin-bottom: 50px;
 }
-#alumni .row .col-md {
-	margin-bottom: 70px;
+#alumni .row .col-sm {
+	margin-bottom: 50px;
 }
 #alumni .img-area {
 	position: absolute;
@@ -211,19 +209,51 @@ span {
 	background-color: #fff;
 }
 
+/* Footer */
+footer {
+	min-height: 400px;
+	background-color: rgba(0,0,0,.7);
+	text-align: center;
+	color: white;
+}
+footer .container .row .col-sm:first-child a {
+	font-family: 'Lobster', cursive;
+	font-size: 17px;
+	position: relative;
+	right: 7px;
+	top: 2px;
+	color: white;
+	text-decoration: none;
+}
+footer .container a img {
+	width: 19px;
+	position: relative;
+	top: -3px;
+}
+footer .container .btn {
+	background-color: white;
+	border: 3px solid green;
+	border-radius: 10px;
+	color: green;
+}
+footer .container hr {
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255,255,255,.5);
+}
+
+
+
 
 
 
 
 
 /* Components Bootstrap */
-.btn.btn-success {
-	border: 0 solid white;
-}
 .btn.btn-success:hover {
 	color: #18c1af;
 	background-color: white;
-	border: 0 solid white;
 }
 
 .btn.btn-primary {

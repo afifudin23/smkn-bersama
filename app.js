@@ -18,6 +18,15 @@ app.get('/', (req, res) => {
         title: 'SMKN BERSAMA' 
     })
 })
+
+app.get('/jurusan/:jurusan', (req, res) => {
+    res.render('jurusan', { 
+        layout: 'layouts/main-layout',
+        title: 'Jurusan',
+        titleJurusan: req.params.jurusan 
+    })
+})
+
 app.get('/yudistira', (req, res) => {
     res.send('Hallo Yudistira!')
 })

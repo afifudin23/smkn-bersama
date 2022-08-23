@@ -19,11 +19,12 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/jurusan/:jurusan', (req, res) => {
+app.get('/jurusan/:jurusan/:gambar', (req, res) => {
     res.render('jurusan', { 
         layout: 'layouts/main-layout',
         title: 'Jurusan',
-        titleJurusan: req.params.jurusan 
+        titleJurusan: req.params.jurusan,
+        gambar: req.params.gambar
     })
 })
 

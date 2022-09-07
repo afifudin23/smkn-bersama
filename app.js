@@ -1,6 +1,10 @@
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const morgan = require('morgan')
+require('./utils/db')
+const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
+
+// setup express
 const app = express()
 const port = 3000
 
@@ -12,10 +16,17 @@ app.use(express.static('public'))
 app.use(morgan('dev'))
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+    const alumnis1 = await Alumni1.find()
+    const alumnis2 = await Alumni2.find()
+    const alumnis3 = await Alumni3.find()
+
     res.render('index', { 
         layout: 'layouts/main-layout',
-        title: 'SMKN BERSAMA' 
+        title: 'SMKN BERSAMA',
+        alumnis1,
+        alumnis2,
+        alumnis3,
     })
 })
 

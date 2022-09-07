@@ -118,105 +118,54 @@
 							<div class="carousel-inner">
 							<div class="carousel-item active">
 								<div class="row">
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/1.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 1</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat blanditiis vero perferendis dolore quisquam, saepe est!</p>
+									<% alumnis1.forEach(alumni1 => { %>
+										<div class="col-sm">
+											<div class="single-box">
+												<div class="img-area"><img src="<%= alumni1.image %>" /></div>
+												<div class="text-area">
+													<h5 class="font-weight-bold"><%= alumni1.name %></h5>
+													<p class="font-weight-light"><%= alumni1.opini %> </p>
+												</div>
 											</div>
 										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/2.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 2</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque saepe corrupti consectetur ab quae!</p>
+									<% }) %>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="row">
+									<% alumnis2.forEach(alumni2 => { %>
+										<div class="col-sm">
+											<div class="single-box">
+												<div class="img-area"><img src="<%= alumni2.image %>" /></div>
+												<div class="text-area">
+													<h5 class="font-weight-bold"><%= alumni2.name %></h5>
+													<p class="font-weight-light"><%= alumni2.opini %></p>
+												</div>
 											</div>
 										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/3.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 3</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae atque, laborum repudiandae aliquid at tempore doloribus et?</p>
+									<% }) %>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="row">
+									<% alumnis3.forEach(alumni3 => { %>
+										<div class="col-sm">
+											<div class="single-box">
+												<div class="img-area"><img src="<%= alumni3.image %>" /></div>
+												<div class="text-area">
+													<h5 class="font-weight-bold"><%= alumni3.name %></h5>
+													<p class="font-weight-light"><%= alumni3.opini %></p>
+												</div>
 											</div>
 										</div>
-									</div>
+									<% }) %>
 								</div>
 							</div>
 								
-							<div class="carousel-item">
-								<div class="row">
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/4.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 4</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam aut molestiae fuga aperiam, illum.</p>
-											</div>
-										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/5.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 5</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo cumque, voluptates pariatur, temporibus perspiciatis iste?</p>
-											</div>
-										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/6.jpg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 6</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat magni labore aperiam hic possimus, quam nostrum!</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 							
-							<div class="carousel-item">
-								<div class="row">
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/7.jpeg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 7</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui distinctio iure ad voluptate.</p>
-											</div>
-										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/8.jpeg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 8</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsa soluta iure nihil sapiente, perferendis ipsam eligendi.</p>
-											</div>
-										</div>
-									</div>
-										
-									<div class="col-sm">
-										<div class="single-box">
-											<div class="img-area"><img src="images/photos/9.jpeg" /></div>
-											<div class="text-area">
-												<h5 class="font-weight-bold">Person 9</h5>
-												<p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam assumenda, harum nesciunt ut itaque.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 						
 					</div>

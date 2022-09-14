@@ -2,6 +2,10 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const morgan = require('morgan')
 require('./utils/db')
+// database mongdb
+// const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
+// database mysql
+const db = require('./utils/db')
 const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
 
 // setup express
@@ -15,11 +19,16 @@ app.use(expressLayouts)
 app.use(express.static('public'))
 app.use(morgan('dev'))
 
+app.use(express.urlencoded({ extended: true }))
+
+// jalankan database
+db.authenticate().then(() => console.log('berhasil terkoneksi dengan database'))
+
 
 app.get('/', async (req, res) => {
-    const alumnis1 = await Alumni1.find()
-    const alumnis2 = await Alumni2.find()
-    const alumnis3 = await Alumni3.find()
+    const alumnis1 = await Alumni1.findAll()
+    const alumnis2 = await Alumni2.findAll()
+    const alumnis3 = await Alumni3.findAll()
 
     res.render('index', { 
         layout: 'layouts/main-layout',
@@ -42,6 +51,24 @@ app.get('/jurusan/:jurusan/:gambar', (req, res) => {
 app.get('/yudistira', (req, res) => {
     res.send('Hallo Yudistira!')
 })
+
+// // mencoba menambahkan data ke dalam table untuk debugging saja
+// app.post('/crud', async (req, res) => {
+//     try {
+//         const { name, opini, image } = req.body
+
+//         const newAlumni3 = new Alumni3({ 
+//             name, opini, image 
+//         })
+        
+//         await newAlumni3.save()
+
+//         res.json(newAlumni3)
+//     } catch (error) {
+//         console.error(error.message)
+//         res.status(500).send('Server error')
+//     }
+// })
 
 app.use((req, res) => {
     res.status(404)

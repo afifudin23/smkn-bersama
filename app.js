@@ -2,9 +2,9 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const morgan = require('morgan')
 require('./utils/db')
-// database mongdb
+// // database mongdb
 // const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
-// database mysql
+// // database mysql
 const db = require('./utils/db')
 const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
 

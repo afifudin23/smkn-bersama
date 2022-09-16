@@ -8,6 +8,5 @@ const db = new Sequelize('smkn_bersama', 'root', '91322', {
     dialect: 'mysql'
 })
 
-db.sync({})
 
 module.exports = db

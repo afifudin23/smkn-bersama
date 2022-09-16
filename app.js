@@ -2,11 +2,8 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const morgan = require('morgan')
 require('./utils/db')
-// // database mongdb
-// const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
-// // database mysql
 const db = require('./utils/db')
-const router = require('./routes/index')
+const router = require('./routes/routes')
 
 // setup express
 const app = express()

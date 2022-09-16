@@ -6,7 +6,7 @@ require('./utils/db')
 // const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
 // // database mysql
 const db = require('./utils/db')
-const { Alumni1, Alumni2, Alumni3, } = require('./model/alumni')
+const router = require('./routes/index')
 
 // setup express
 const app = express()
@@ -17,37 +17,23 @@ app.set('view engine', 'ejs')
 app.use(expressLayouts)
 
 app.use(express.static('public'))
+// untuk development saja nanti hapus saat deploy
 app.use(morgan('dev'))
 
 app.use(express.urlencoded({ extended: true }))
 
+
+
 // jalankan database
-db.authenticate().then(() => console.log('berhasil terkoneksi dengan database'))
+try {
+    db.authenticate().then(() => console.log('berhasil terkoneksi dengan database'))
+} catch (error) {
+    console.error(error)
+}
+ 
+app.use(router)
 
-
-app.get('/', async (req, res) => {
-    const alumnis1 = await Alumni1.findAll()
-    const alumnis2 = await Alumni2.findAll()
-    const alumnis3 = await Alumni3.findAll()
-
-    res.render('index', { 
-        layout: 'layouts/main-layout',
-        title: 'SMKN BERSAMA',
-        alumnis1,
-        alumnis2,
-        alumnis3,
-    })
-})
-
-app.get('/jurusan/:jurusan/:gambar', (req, res) => {
-    res.render('jurusan', { 
-        layout: 'layouts/main-layout',
-        title: 'Jurusan',
-        titleJurusan: req.params.jurusan,
-        gambar: req.params.gambar
-    })
-})
-
+// exclusive for programming
 app.get('/yudistira', (req, res) => {
     res.send('Hallo Yudistira!')
 })

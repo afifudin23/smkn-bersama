@@ -1,10 +1,24 @@
+const user = require('../model/user')
+
 const viewUser = async (req, res) => {
     try {
         const { email } = req.body
-        res.render('user', { 
+        const userValid = await user.findOne({
+            where: {
+                email: email
+            }
+        })
+        if(userValid) {
+            res.render('user', { 
+                    layout: 'layouts/main-layout',
+                    title: email,
+                })
+        } else {
+            res.render('login', { 
                 layout: 'layouts/main-layout',
-                title: email,
+                title: 'Login',
             })
+        }
     } catch (error) {
         console.error(error)
     }
